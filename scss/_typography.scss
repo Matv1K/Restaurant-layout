@@ -1,0 +1,158 @@
+//HEADINGS
+
+.heading-1 {
+    font-size: 9rem;
+    font-family: "Yeseva One", sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+
+    @media only screen and (max-width: 61.25em) {
+        font-size: 8rem;   
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 7rem;   
+    }
+}
+
+.heading-2 {
+    font-size: 3.6rem;
+    text-align: center;
+    font-family: "Yeseva One", sans-serif;
+    font-weight: 400;
+}
+
+.heading-2-gold {
+    color: #cc9900;
+}
+
+.heading-2-light {
+    color: #fff;
+}
+
+.heading-3 {
+    font-size: 2.1rem;
+    font-family: "Yeseva One", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.heading-3-gold {
+    color: #cc9900;
+}
+
+.heading-3-light {
+    color: #fff;
+}
+
+//UTILITIES
+
+.margin-right-small {
+    margin-right: 1rem;
+}
+
+
+.margin-right-medium {
+    margin-right: 2.5rem;
+}
+
+.margin-bottom-smallest {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 2.5rem;
+}
+
+.margin-bottom-big {
+    margin-bottom: 3.5rem;
+}
+
+.margin-bottom-large {
+    margin-bottom: 4.5rem;
+}
+
+.margin-bottom-largest {
+    margin-bottom: 7rem;
+}
+
+.margin-top-small {
+    margin-top: 1.5rem;
+}
+
+//BUTTONS
+
+.buttons {
+    padding-top: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 2rem 5rem;
+}
+
+.btn__log-in {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: #cc9900;
+    padding: .5rem 4rem;
+    cursor: pointer;
+    opacity: .7;
+    transition: background-color .2s, opacity .2s;
+
+    &:hover {
+        background-color: darken(#cc9900, 10%);
+        opacity: 1;
+    }
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+    border: 1px solid #000;
+    background-image: url(../img/bg-button.png);
+    background-size: cover;
+    transition: background-color .2s, opacity .2s;
+    opacity: .7;
+
+    &:hover {
+        background-color: rgba(#cc9900, .15);
+        opacity: 1;
+    }
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+    border: 1px solid #fff;
+    background-image: url(../img/bg-button-light.png);
+    background-size: cover;
+    transition: background-color .2s, opacity .2s;
+    opacity: .7;
+
+    &:hover {
+        background-color: rgba(#cc9900, .15);
+        opacity: 1;
+    }
+}
+
+//PARAGRAPH
+
+.paragraph {
+    color: #797979;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.text {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+}
