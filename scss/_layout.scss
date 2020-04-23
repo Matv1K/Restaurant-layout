@@ -1,5 +1,4 @@
 .container {
-    width: 100%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -111,6 +110,16 @@
             align-items: center;
         }
 
+        .dish {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
         .wrapper {
             margin-top: 1rem;
 
@@ -158,12 +167,24 @@
             .dishes {
                 display: flex;
 
+                @media only screen and (max-width: 28.75em) {
+                    flex-direction: column;
+                }
+
                 .dish {
 
-                    @media only screen and (max-width: 28.125em) {
+                    @media only screen and (max-width: 28.75em) {
                         margin-right: 2rem;
+                        
+                        &:not(:last-child) {
+                            margin-bottom: 3rem;
+                        }
                     }
                 }
+            }
+
+            @media only screen and (max-width: 28.75em) {
+                max-width: 100%;
             }
         }
     }
@@ -201,8 +222,10 @@
                 margin: 3rem;
             }
 
-            @media only screen and (max-width: 28.125em) {
-                
+            @media only screen and (max-width: 28.75em) {
+                max-width: 100%;
+                padding-right: 2rem;
+                padding-left: 2rem;
             }
             
             .list {
@@ -280,6 +303,13 @@
 
         .pictures {
             display: flex;
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+            img {
+                max-width: 100%;
+            }
+
 
             @media only screen and (max-width: 56.25em) {
                 justify-content: center;
@@ -379,7 +409,13 @@
             align-items: center;
             line-height: 1.2;
             text-align: center;
-            margin: 3rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            max-width: 100%;
+
+            @media only screen and (max-width: 56.25em) {
+                margin: 3rem;
+            }
 
             flex: 0 0 30%;
 

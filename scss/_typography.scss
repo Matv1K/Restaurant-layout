@@ -89,6 +89,12 @@
 
 .buttons {
     padding-top: 2rem;
+
+    @media only screen and (max-width: 25em) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .btn:link,
@@ -122,6 +128,7 @@
     background-size: cover;
     transition: background-color .2s, opacity .2s;
     opacity: .7;
+    margin: 2rem;
 
     &:hover {
         background-color: rgba(#cc9900, .15);
@@ -136,6 +143,10 @@
     background-size: cover;
     transition: background-color .2s, opacity .2s;
     opacity: .7;
+    
+    @media screen and (max-width: 25rem) {
+        margin: 2rem;
+    }
 
     &:hover {
         background-color: rgba(#cc9900, .15);

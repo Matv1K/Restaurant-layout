@@ -64,6 +64,11 @@
 
 .buttons {
   padding-top: 2rem; }
+  @media only screen and (max-width: 25em) {
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .btn:link,
 .btn:visited {
@@ -91,7 +96,8 @@
   background-image: url(../img/bg-button.png);
   background-size: cover;
   transition: background-color .2s, opacity .2s;
-  opacity: .7; }
+  opacity: .7;
+  margin: 2rem; }
   .btn-primary:link:hover,
   .btn-primary:visited:hover {
     background-color: rgba(204, 153, 0, 0.15);
@@ -104,6 +110,10 @@
   background-size: cover;
   transition: background-color .2s, opacity .2s;
   opacity: .7; }
+  @media screen and (max-width: 25rem) {
+    .btn-secondary:link,
+    .btn-secondary:visited {
+      margin: 2rem; } }
   .btn-secondary:link:hover,
   .btn-secondary:visited:hover {
     background-color: rgba(204, 153, 0, 0.15);
@@ -120,7 +130,6 @@
   text-align: center; }
 
 .container {
-  width: 100%;
   max-width: 120rem;
   margin: 0 auto; }
 
@@ -195,6 +204,12 @@
       .section__food--info {
         flex-direction: column;
         align-items: center; } }
+    .section__food--info .dish {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section__food--info .dish img {
+        max-width: 100%; }
     .section__food--info .wrapper {
       margin-top: 1rem;
       display: flex;
@@ -229,9 +244,17 @@
       justify-content: center; }
       .section__ingredients--info .block .dishes {
         display: flex; }
-        @media only screen and (max-width: 28.125em) {
+        @media only screen and (max-width: 28.75em) {
+          .section__ingredients--info .block .dishes {
+            flex-direction: column; } }
+        @media only screen and (max-width: 28.75em) {
           .section__ingredients--info .block .dishes .dish {
-            margin-right: 2rem; } }
+            margin-right: 2rem; }
+            .section__ingredients--info .block .dishes .dish:not(:last-child) {
+              margin-bottom: 3rem; } }
+      @media only screen and (max-width: 28.75em) {
+        .section__ingredients--info .block {
+          max-width: 100%; } }
 
 .section__menu {
   background-image: url(../img/pattern.png);
@@ -255,6 +278,11 @@
       @media only screen and (max-width: 58.4375em) {
         .section__menu--info .menu {
           margin: 3rem; } }
+      @media only screen and (max-width: 28.75em) {
+        .section__menu--info .menu {
+          max-width: 100%;
+          padding-right: 2rem;
+          padding-left: 2rem; } }
       .section__menu--info .menu .list:not(:last-child) {
         margin-bottom: 1rem; }
       .section__menu--info .menu .list__title {
@@ -302,7 +330,11 @@
       .section__order--info {
         flex-direction: column-reverse; } }
     .section__order--info .pictures {
-      display: flex; }
+      display: flex;
+      padding-right: 2rem;
+      padding-left: 2rem; }
+      .section__order--info .pictures img {
+        max-width: 100%; }
       @media only screen and (max-width: 56.25em) {
         .section__order--info .pictures {
           justify-content: center;
@@ -372,8 +404,13 @@
       align-items: center;
       line-height: 1.2;
       text-align: center;
-      margin: 3rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      max-width: 100%;
       flex: 0 0 30%; }
+      @media only screen and (max-width: 56.25em) {
+        .footer--info .part {
+          margin: 3rem; } }
       @media only screen and (max-width: 56.25em) {
         .footer--info .part .part-3 {
           padding-bottom: 7rem; } }
